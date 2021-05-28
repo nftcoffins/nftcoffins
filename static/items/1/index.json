@@ -1,0 +1,40 @@
+{
+  "id": 1,
+  "name": "Jesus",
+  "description": "First-century Jewish preacher and religious leader. He is the central figure of Christianity, the world's largest religion. Most Christians believe he is the incarnation of God the Son and the awaited messiah (the Christ), prophesied in the Old Testament.",
+  "image": "https://nftcoffins.com/api/items/1/1.jpg",
+  "external_url": "https://nftcoffins.com/api/items/1",
+  "burning_fee": 666,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "God"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Influencer"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Religion"
+    },
+    {
+      "trait_type": "Features",
+      "value": 9
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Undefined"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": -62293400000000
+    },
+    {
+      "display_type": "date",
+      "trait_type": "died",
+      "value": -61200000000000
+    }
+  ]
+}
