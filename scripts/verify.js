@@ -4,7 +4,7 @@ const { alchemyContractAddress } = require('../secrets.json')
 const { baseTokenUri, baseContractUri, totalSupplyLimit } = require('../base.config')
 
 const constructorArguments = `${baseTokenUri} ${baseContractUri} ${totalSupplyLimit}`
-const command = `npx hardhat verify --network rinkeby ${alchemyContractAddress} ${constructorArguments}`
+const command = `npx hardhat verify --network mainnet ${alchemyContractAddress} ${constructorArguments}`
 
 exec(command, (err, stdout, stderr) => {
     if (err) {

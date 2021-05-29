@@ -1,4 +1,4 @@
-const { alchemyContractAddress, newOwnerAddress = 0 } = require('../secrets.json');
+const { alchemyContractAddress, newOwnerAddress } = require('../secrets.json');
 
 async function main() {
   const contractFactory = await ethers.getContractFactory('Contract');
