@@ -1,0 +1,35 @@
+{
+  "id": 7,
+  "name": "Vladimir Putin",
+  "description": "Russian conservative politician and former intelligence officer who is serving as the current president of Russia since 2012, previously being in the office from 1999 until 2008. He was also prime minister from 1999 to 2000 and again from 2008 to 2012. As of 2021, Putin is the second-longest serving European president after Alexander Lukashenko of Belarus.",
+  "image": "https://nftcoffins.com/api/items/7/7.jpg",
+  "external_url": "https://nftcoffins.com/api/items/7",
+  "burning_fee": 50,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Politician"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Dictator"
+    },
+    {
+      "trait_type": "Features",
+      "value": 9
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": -543855600
+    }
+  ]
+}

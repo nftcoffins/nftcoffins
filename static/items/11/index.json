@@ -1,0 +1,35 @@
+{ 
+  "id": 11,
+  "name": "SpongeBob SquarePants",
+  "description": "He is a sea sponge who works as a fry cook at the Krusty Krab, a fast food restaurant known for its signature burger, the Krabby Patty. He is characterized by his optimism and childlike attitude, and is influenced by other comedic characters, including Stan Laurel and Pee-Wee Herman. He is voiced by actor and comedian Tom Kenny.",
+  "image": "https://nftcoffins.com/api/items/11/11.jpg",
+  "external_url": "https://nftcoffins.com/api/items/11",
+  "burning_fee": 30,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Silver"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Character"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Cartoon"
+    },
+    {
+      "trait_type": "Features",
+      "value": 8
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 521712000
+    }
+  ]
+}
