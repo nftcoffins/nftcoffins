@@ -1,41 +1,7 @@
-# nftcoffins.com
+# NFT Coffins
 
-### install
-```
-npm ci
-```
-### setup
-- rename `secrets.dev.json` to `secrets.json` and fill required fields
+### NFT Coffins of most significant personalities.
 
-### Tests:
+> When death strikes, we are all the same. Even Jesus! You control how future generations will remember you until you leave. The set of our actions leaves a mark on our biography. Do great things.
 
-```
-npm run test
-```
-
-### Development / Deploy testnet:
-
-```
-npm run start
-npm run compile
-
-npm run local:deploy
-npm run local:mint
-npm run local:transfer
-```
-
-### Development / Deploy mainnet:
-
-```
-npm run start
-npm run compile
-
-npm run deploy
-npm run mint
-```
-
-### Development / Run client dev server
-
-```
-npm run serve
-```
+> We've created a collection of 420 unique NFT coffins for the most influential people of all time. Features of each coffin reflect how people remember it.

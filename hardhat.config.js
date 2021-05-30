@@ -3,7 +3,7 @@ require("@nomiclabs/hardhat-waffle");
 
 const { alchemyApiKey, mnemonic, apiKey } = require('./secrets.json');
 
-module.exports = { //
+module.exports = {
   solidity: '0.8.0',
   networks: {
     mainnet: {
