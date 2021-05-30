@@ -1,0 +1,35 @@
+{ 
+  "id": 10,
+  "name": "PewDiePie",
+  "description": "Swedish YouTuber and comedian, known primarily for his Let's Play videos and comedy formatted shows.",
+  "image": "https://nftcoffins.com/api/items/10/10.jpg",
+  "external_url": "https://nftcoffins.com/api/items/10",
+  "burning_fee": 30,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Silver"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Influencer"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "YouTuber"
+    },
+    {
+      "trait_type": "Features",
+      "value": 8
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 625222800
+    }
+  ]
+}

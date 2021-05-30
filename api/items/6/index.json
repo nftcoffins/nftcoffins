@@ -1,0 +1,35 @@
+{ 
+  "id": 6,
+  "name": "Snoop Dogg",
+  "description": "American rapper, singer, songwriter, actor, record producer, media personality, and businessman. His fame dates to 1992 when he featured on Dr Dre's debut solo single, Deep Cover, and then on Dre's debut solo album, The Chronic. Snoop has since sold over 23 million albums in the United States and 35 million albums worldwide.",
+  "image": "https://nftcoffins.com/api/items/6/6.jpg",
+  "external_url": "https://nftcoffins.com/api/items/6",
+  "burning_fee": 50,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Art"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Rapper"
+    },
+    {
+      "trait_type": "Features",
+      "value": 10
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 56797200
+    }
+  ]
+}

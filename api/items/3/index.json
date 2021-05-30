@@ -1,0 +1,40 @@
+{ 
+  "id": 3,
+  "name": "Crypto Punk",
+  "description": " The first non-fungible tokens (NFT) on the Ethereum blockchain. American studio Larva Labs developed the project, a two-person team consisting of Canadian software developers Matt Hall and John Watkinson. The London punk scenes inspired the experimental project, the cyberpunk movement and William Gibson's novel Neuromancer, Johnny Mnemonic, Blade Runner, and electronic music artists Daft Punk. The crypto art blockchain project was an inspiration for the ERC-721 standard for NFTs and the modern crypto art movement. Many investors and collectors consider CryptoPunks NFTs pop art, digital blue-chip art investment and digital Warhols.",
+  "image": "https://nftcoffins.com/api/items/3/3.jpg",
+  "external_url": "https://nftcoffins.com/api/items/3",
+  "burning_fee": 80,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Character"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "NFT"
+    },
+    {
+      "trait_type": "Features",
+      "value": 13
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Full"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 1499202000
+    },
+    {
+      "display_type": "date",
+      "trait_type": "died",
+      "value": 1619902800
+    }
+  ]
+}

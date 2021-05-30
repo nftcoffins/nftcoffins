@@ -1,0 +1,35 @@
+{ 
+   "id": 9,
+  "name": "Lady Gaga",
+  "description": "American singer, songwriter, and actress. She is known for her image reinventions and musical versatility. Gaga began performing as a teenager, singing at open mic nights and acting in school plays. She studied at Collaborative Arts Project 21, through New York University's Tisch School of the Arts, before dropping out to pursue a career in music. After Def Jam Recordings cancelled her contract, she worked as a songwriter for Sony/ATV Music Publishing, where she signed a joint deal with Interscope Records and Akon's label, KonLive Distribution, in 2007. Gaga rose to prominence the following year with her debut studio album, The Fame, and its chart-topping singles 'Just Dance' and 'Poker Face'. The album was later reissued to include the EP The Fame Monster (2009), which yielded the successful singles 'Bad Romance', 'Telephone', and 'Alejandro.",
+  "image": "https://nftcoffins.com/api/items/9/9.jpg",
+  "external_url": "https://nftcoffins.com/api/items/9",
+  "burning_fee": 30,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Silver"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Art"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Singer"
+    },
+    {
+      "trait_type": "Features",
+      "value": 9
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 512384400
+    }
+  ]
+}

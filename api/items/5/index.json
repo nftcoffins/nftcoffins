@@ -1,0 +1,35 @@
+{ 
+  "id": 5,
+  "name": "Conor McGregor",
+  "description": "Irish professional mixed martial artist and professional boxer. He is a former Ultimate Fighting Championship (UFC) featherweight and lightweight double-champion. As of 25 January 2021, he is #6 in the UFC lightweight rankings, and as of March 23, 2021, he is #15 in the UFC men's pound-for-pound rankings.",
+  "image": "https://nftcoffins.com/api/items/5/5.jpg",
+  "external_url": "https://nftcoffins.com/api/items/5",
+  "burning_fee": 50,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Sport"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "UFC"
+    },
+    {
+      "trait_type": "Features",
+      "value": 9
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 584870400
+    }
+  ]
+}
