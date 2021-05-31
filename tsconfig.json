@@ -11,7 +11,5 @@
         "allowJs": false
     },
     "baseUrl": "./",
-    "paths": {
-        "items/*": ["static/items/*"]
-    }
+    "paths": {}
 }
