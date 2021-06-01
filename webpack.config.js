@@ -8,7 +8,7 @@ const CopyPlugin = require('copy-webpack-plugin')
 const isProduction = process.env.NODE_ENV === 'production'
 
 const config = {
-    entry: './client/index.tsx',
+    entry: './client/src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
@@ -19,6 +19,18 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './client/index.html',
+            favicon: "./client/favicon.ico",
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'client/images',
+                    to: 'images',
+                },
+                {
+                    from: 'client/site.webmanifest',
+                },
+            ],
         }),
     ],
     module: {
@@ -36,9 +48,7 @@ const config = {
                         loader: 'css-loader',
                         options: {
                             modules: {
-                                localIdentName: isProduction
-                                    ? '[hash:base64]'
-                                    : '[local]-[hash:base64:5]',
+                                localIdentName: isProduction ? '[hash:base64]' : '[local]-[hash:base64:5]',
                             },
                         },
                     }, // to convert the resulting CSS to Javascript to be bundled (modules:true to rename CSS classes in output to cryptic identifiers, except if wrapped in a :global(...) pseudo class)
