@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
-import isEmpty from 'is-empty-typed'
 
-import { TokenPreview } from '../components/tokenPreview/TokenPreview'
-import styles from './App.scss'
+import { TokenPreviews } from '../components/tokenPreviews/TokenPreviews'
 import { useAppDispatch, useAppSelector } from '../hooks'
-import { fetchGeneralInfoAsync, selectTokenIds } from './AppSlice'
+import { Header } from '../components/header/Header'
 
-function App() {
+import { fetchGeneralInfoAsync, selectTokenIds } from './AppSlice'
+import styles from './App.scss'
+
+export function App() {
     const dispatch = useAppDispatch()
     const tokenIds = useAppSelector(selectTokenIds)
 
@@ -16,9 +17,11 @@ function App() {
 
     return (
         <div className={styles.app}>
-            {!isEmpty(tokenIds) && tokenIds.map((tokenId) => <TokenPreview key={tokenId} tokenId={tokenId} />)}
+            <div className={styles.content}>
+                <Header />
+
+                <TokenPreviews title="for sale" tokenIds={tokenIds} />
+            </div>
         </div>
     )
 }
-
-export default App

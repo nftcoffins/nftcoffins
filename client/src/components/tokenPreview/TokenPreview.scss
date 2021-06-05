@@ -13,7 +13,7 @@
     align-items: center;
 
     .id {
-        @include font(lg, $clr-black, bold);
+        @include font(md, $clr-black, bold);
     }
 
     img {
@@ -26,19 +26,18 @@
         justify-content: space-between;
 
         width: 100%;
-        padding: 0 24px;
+        padding: 0 18px;
 
         .nameBlock {
-            @include font(md, $clr-black, bold);
+            @include font(sm, $clr-black, bold);
         }
 
         .priceBlock {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
 
-            @include font(sm, $clr-black, bold);
+            @include font(xs, $clr-black, bold);
         }
     }
 }
