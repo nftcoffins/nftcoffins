@@ -4,12 +4,12 @@
         "resolveJsonModule": true,
         "moduleResolution": "Node",
         "esModuleInterop": true,
-        "noImplicitAny": true,
         "module": "es6",
         "target": "es5",
         "jsx": "react",
         "allowJs": false
     },
     "baseUrl": "./",
-    "paths": {}
+    "paths": {
+    }
 }

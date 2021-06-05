@@ -1,0 +1,66 @@
+@import 'client/src/styles/common';
+
+.loaderContainer,
+.tokenPreview {
+    min-height: 290px;
+    width: 210px;
+}
+
+.tokenPreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .id {
+        @include font(lg, $clr-black, bold);
+    }
+
+    img {
+        height: 210px;
+        width: 210px;
+    }
+
+    .bottomBlock {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        padding: 0 24px;
+
+        .nameBlock {
+            @include font(md, $clr-black, bold);
+        }
+
+        .priceBlock {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @include font(sm, $clr-black, bold);
+        }
+    }
+}
+
+.tokenPreview {
+    &.god .rank {
+        color: $clr-god;
+    }
+
+    &.legendary .rank {
+        color: $clr-legendary;
+    }
+
+    &.gold .rank {
+        color: $clr-gold;
+    }
+
+    &.evil .rank {
+        color: $clr-evil;
+    }
+
+    &.silver .rank {
+        color: $clr-silver;
+    }
+}
