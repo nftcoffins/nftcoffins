@@ -14,7 +14,7 @@ export interface AppState {
 const initialState: AppState = {
     generalInfo: {
         totalSupply: 0,
-        prices: null,
+        prices: {},
     },
     tokenIds: [],
     isLoading: true,

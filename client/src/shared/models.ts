@@ -31,6 +31,7 @@ export class Token {
         this.rank = getAttributeValue('rank', attributes) as string
         this.category = getAttributeValue('category', attributes) as string
         this.subcategory = getAttributeValue('subcategory', attributes) as string
+        this.coffinStatus = getAttributeValue('coffin status', attributes) as string
         this.featuresCount = getAttributeValue('features', attributes) as number
         this.bornMillis = getAttributeValue('born', attributes) as number
         this.diedMillis = getAttributeValue('died', attributes) as number

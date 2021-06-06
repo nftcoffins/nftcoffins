@@ -1,7 +1,7 @@
 import React from 'react'
 import isEmpty from 'is-empty-typed'
 
-import { TokenPreview } from '../tokenPreview/TokenPreview'
+import { TokenPreview } from '../../shared/components/tokenPreview/TokenPreview'
 
 import styles from './TokenPreviews.scss'
 

@@ -9,10 +9,11 @@ const config = {
     entry: './client/src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
     },
     devServer: {
-        open: true,
-        host: 'localhost',
+        hot: true,
+        historyApiFallback: true,
     },
     plugins: [
         new HtmlWebpackPlugin({

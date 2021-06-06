@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
+import { useHistory } from 'react-router-dom'
 
-import { fetchToken } from '../../shared/api'
-import { LoaderContainer } from '../../shared/components'
-import { selectGeneralInfo } from '../../app/AppSlice'
-import { useAppSelector } from '../../shared/hooks'
+import { fetchToken } from '../../api'
+import { LoaderContainer } from '../index'
+import { selectGeneralInfo } from '../../../app/AppSlice'
+import { useAppSelector } from '../../hooks'
 
-import { Token } from '../../shared/models'
+import { Token } from '../../models'
 import styles from './TokenPreview.scss'
 
 type Props = {
@@ -14,19 +15,24 @@ type Props = {
 }
 
 export function TokenPreview({ tokenId }: Props) {
+    const history = useHistory()
     const { prices } = useAppSelector(selectGeneralInfo)
     const [token, setToken] = useState<Token>(null)
     const tokenPrice = prices[tokenId]
 
     useEffect(() => {
         fetchToken(tokenId).then(setToken)
-    }, [])
+    }, [tokenId])
 
     const containerClasses = classNames(styles.tokenPreview, styles[token?.rank.toLowerCase()])
 
+    const toToken = () => {
+        history.push(`/token/${tokenId}`)
+    }
+
     return (
         <LoaderContainer isLoading={!token} className={styles.loaderContainer}>
-            <div className={containerClasses}>
+            <div onClick={toToken} className={containerClasses}>
                 <div className={styles.id}>{`#${token?.id}`}</div>
                 <img src={token?.webImage} alt="Token Image" />
                 <div className={styles.bottomBlock}>

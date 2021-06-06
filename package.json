@@ -55,6 +55,7 @@
     "is-empty-typed": "^1.0.0",
     "mini-css-extract-plugin": "^1.6.0",
     "prettier": "^2.3.0",
+    "react-router-dom": "^5.2.0",
     "sass": "^1.32.13",
     "sass-loader": "^11.1.1",
     "scss-reset": "^1.1.11",

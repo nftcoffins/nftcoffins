@@ -1,0 +1,13 @@
+@import 'client/src/styles/common';
+
+.firstToken {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    margin-bottom: 60px;
+    @include font(xl, $clr-black, bold);
+    text-align: center;
+  }
+}

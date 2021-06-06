@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
+import { useHistory } from 'react-router-dom'
 
 import image from '../../../images/favicon/apple-touch-icon.png'
 
@@ -12,14 +13,20 @@ type Props = {
 }
 
 export function Header({ className }: Props) {
+    const history = useHistory()
     const [isOpen, setIsOpen] = useState(false)
     const handleClick = () => setIsOpen(!isOpen)
     const closeMobileMenu = () => setIsOpen(false)
 
+    const toHome = () => {
+        closeMobileMenu()
+        history.push(`/`)
+    }
+
     return (
         <div className={classNames(styles.header, className)}>
             <div className={styles.logoNav}>
-                <div className={styles.logoContainer}>
+                <div className={styles.logoContainer} onClick={toHome}>
                     <img className={styles.logo} src={image} alt="Logo" />
                     <div className={styles.title}>NFT Coffins</div>
                 </div>
