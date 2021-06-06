@@ -7,6 +7,6 @@
     @include font-base;
     color: $color;
     font-size: map-get($font-size-map, $size);
-    line-height: map-get($font-size-map, $size) * 1.1;
+    line-height: map-get($font-size-map, $size) * 1.2;
     font-weight: map-get($font-weight-map, $type);
 }

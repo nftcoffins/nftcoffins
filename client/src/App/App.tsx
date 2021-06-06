@@ -6,8 +6,10 @@ import { Header } from '../components/header/Header'
 
 import { fetchGeneralInfoAsync, selectTokenIds } from './AppSlice'
 import styles from './App.scss'
-import { Banner } from '../components/banner/banner'
-import { About } from '../components/about/about'
+import { Banner } from '../components/banner/Banner'
+import { About } from '../components/about/About'
+import { Rules } from '../components/rules/Rules'
+import { WhatAreNftCoffins } from '../components/whatAreNftCoffins/WhatAreNftCoffins'
 
 export function App() {
     const dispatch = useAppDispatch()
@@ -25,6 +27,10 @@ export function App() {
                 <Banner className={styles.banner} />
 
                 <About className={styles.about} />
+
+                <Rules className={styles.rules} />
+
+                <WhatAreNftCoffins className={styles.whatAreNftCoffins} />
 
                 <TokenPreviews title="for sale" tokenIds={tokenIds} />
             </div>

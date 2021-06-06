@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import { OpenSeaLink } from '../shared'
 
 import image from '../../../images/main.png'
-import styles from './banner.scss'
+import styles from './Banner.scss'
 
 type Props = {
     className: string

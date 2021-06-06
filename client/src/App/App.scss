@@ -7,10 +7,19 @@
     .content {
         width: 100%;
         max-width: 1150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            width: 100%;
+        }
 
         .header,
         .banner,
-        .about {
+        .about,
+        .rules,
+        .whatAreNftCoffins {
             margin-bottom: 100px;
         }
     }

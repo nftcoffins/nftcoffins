@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import styles from './about.scss'
+import styles from './About.scss'
 
 type Props = {
     className: string

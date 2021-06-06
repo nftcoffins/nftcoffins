@@ -5,7 +5,7 @@ import empty from '../../../images/emptyCoffin.png'
 import withAttributes from '../../../images/withAttributes.png'
 import fullCoffin from '../../../images/fullCoffin.png'
 
-import styles from './rules.scss'
+import styles from './Rules.scss'
 
 type Props = {
     className: string
