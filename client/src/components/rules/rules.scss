@@ -1,0 +1,57 @@
+@import 'client/src/styles/common';
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        margin-bottom: 60px;
+        @include font(xl, $clr-black, bold);
+    }
+
+    .rulesBlock {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .rule {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            > * {
+                margin-bottom: 16px;
+            }
+
+            img {
+                height: 358px;
+                width: 358px;
+            }
+
+            .subtitle {
+                @include font(md, $clr-black, bold);
+            }
+
+            .description {
+                @include font(xs, $clr-gray);
+            }
+        }
+
+        @media (max-width: 1150px) {
+            grid-template-columns: 1fr;
+
+            .rule {
+                align-items: center;
+
+                .description {
+                    text-align: center;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+}
