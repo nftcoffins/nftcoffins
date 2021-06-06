@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
 
-import { fetchToken } from '../../api'
-import { LoaderContainer } from '../shared'
+import { fetchToken } from '../../shared/api'
+import { LoaderContainer } from '../../shared/components'
 import { selectGeneralInfo } from '../../app/AppSlice'
-import { useAppSelector } from '../../hooks'
+import { useAppSelector } from '../../shared/hooks'
 
-import { Token } from '../../models'
+import { Token } from '../../shared/models'
 import styles from './TokenPreview.scss'
 
 type Props = {

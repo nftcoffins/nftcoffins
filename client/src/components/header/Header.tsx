@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import image from '../../../images/favicon/apple-touch-icon.png'
 
-import { OpenSeaLink } from '../shared'
+import { OpenSeaLink } from '../../shared/components'
 import { Burger } from './burger/Burger'
 import styles from './Header.scss'
 

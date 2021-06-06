@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import { OpenSeaLink } from '../shared'
+import { OpenSeaLink } from '../../shared/components'
 
 import image from '../../../images/main.png'
 import styles from './Banner.scss'

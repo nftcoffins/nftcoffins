@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { OPEN_SEA_URL } from '../../../constants'
+import { OPEN_SEA_URL } from '../../constants'
 import coffinImage from '../../../../images/coffin.png'
 import styles from './OpenSeaLink.scss'
 

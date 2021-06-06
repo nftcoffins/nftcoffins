@@ -1,9 +1,9 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
-import { RootState } from '../store'
-import { fetchGeneralInfo } from '../api'
-import { GeneralInfo } from '../interfaces'
-import { getTokenIds } from '../utils'
+import { RootState } from '../shared/store'
+import { fetchGeneralInfo } from '../shared/api'
+import { GeneralInfo } from '../shared/interfaces'
+import { getTokenIds } from '../shared/utils'
 
 export interface AppState {
     generalInfo: GeneralInfo

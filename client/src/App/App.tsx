@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import { TokenPreviews } from '../components/tokenPreviews/TokenPreviews'
-import { useAppDispatch, useAppSelector } from '../hooks'
+import { useAppDispatch, useAppSelector } from '../shared/hooks'
 import { Header } from '../components/header/Header'
 
 import { fetchGeneralInfoAsync, selectTokenIds } from './AppSlice'
