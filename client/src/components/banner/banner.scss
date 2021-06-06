@@ -1,0 +1,43 @@
+@import 'client/src/styles/common';
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .description {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+
+        .big {
+            @include font(xxxl, $clr-black, bold);
+            margin-bottom: 16px;
+        }
+
+        .small {
+            @include font(xl);
+            margin-bottom: 80px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+
+        .description {
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 80px;
+
+            .big, .small {
+                text-align: center;
+            }
+        }
+
+        .imageBlock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

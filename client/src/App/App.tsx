@@ -6,6 +6,8 @@ import { Header } from '../components/header/Header'
 
 import { fetchGeneralInfoAsync, selectTokenIds } from './AppSlice'
 import styles from './App.scss'
+import { Banner } from '../components/banner/banner'
+import { About } from '../components/about/about'
 
 export function App() {
     const dispatch = useAppDispatch()
@@ -18,7 +20,11 @@ export function App() {
     return (
         <div className={styles.app}>
             <div className={styles.content}>
-                <Header />
+                <Header className={styles.header} />
+
+                <Banner className={styles.banner} />
+
+                <About className={styles.about} />
 
                 <TokenPreviews title="for sale" tokenIds={tokenIds} />
             </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import classnames from 'classnames'
+import classNames from 'classnames'
 
 import { fetchToken } from '../../api'
 import { LoaderContainer } from '../shared'
@@ -22,7 +22,7 @@ export function TokenPreview({ tokenId }: Props) {
         fetchToken(tokenId).then(setToken)
     }, [])
 
-    const containerClasses = classnames(styles.tokenPreview, styles[token?.rank.toLowerCase()])
+    const containerClasses = classNames(styles.tokenPreview, styles[token?.rank.toLowerCase()])
 
     return (
         <LoaderContainer isLoading={!token} className={styles.loaderContainer}>

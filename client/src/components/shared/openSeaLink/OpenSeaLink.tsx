@@ -1,6 +1,6 @@
 import React from 'react'
 
-import coffinImage from '../../../../images/coffin.svg'
+import coffinImage from '../../../../images/coffin.png'
 import styles from './OpenSeaLink.scss'
 
 export function OpenSeaLink() {

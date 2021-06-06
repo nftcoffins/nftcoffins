@@ -2,9 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 32px;
 
     .content {
         width: 100%;
         max-width: 1150px;
+
+        .header,
+        .banner,
+        .about {
+            margin-bottom: 100px;
+        }
     }
 }

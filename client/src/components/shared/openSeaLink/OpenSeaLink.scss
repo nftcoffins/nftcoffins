@@ -19,5 +19,6 @@
         position: relative;
         z-index: 1;
         @include font(xs, $clr-black, bold);
+        text-decoration: none;
     }
 }

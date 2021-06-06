@@ -1,0 +1,23 @@
+@import 'client/src/styles/common';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 80px;
+
+    .title {
+        margin-bottom: 60px;
+        @include font(xl, $clr-black, bold);
+    }
+
+    .description {
+        @include font(md, $clr-gray);
+
+        p:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}

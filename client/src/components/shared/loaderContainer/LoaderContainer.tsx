@@ -1,7 +1,5 @@
 import React, { ReactElement } from 'react'
-import classnames from 'classnames'
-
-import { ComponentLike } from '../../../types'
+import classNames from 'classnames'
 
 import styles from './LoaderContainer.scss'
 import { Spinner } from '../spinner/Spinner'
@@ -17,7 +15,7 @@ export const LoaderContainer = ({ isLoading, children, className }: Props) => {
 
     if (isLoading) {
         return (
-            <div className={classnames(styles.loaderContainer, className)} onClick={onContentClick}>
+            <div className={classNames(styles.loaderContainer, className)} onClick={onContentClick}>
                 <Spinner />
             </div>
         )
