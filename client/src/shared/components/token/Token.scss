@@ -1,0 +1,235 @@
+@import '../../../styles/common';
+
+.tokenPreview {
+    .gridContainer {
+        display: grid;
+        grid-template: auto / repeat(14, 1fr);
+        grid-auto-flow: dense;
+        grid-gap: 10px;
+
+        img {
+            grid-area: 1 / 1 / span 15 / span 6;
+        }
+
+        > *:not(.description) {
+            display: flex;
+        }
+
+        .propertyName {
+            @include font(xs);
+            margin-right: 6px;
+        }
+
+        .propertyValue {
+            @include font(xs, $clr-blue, bold);
+        }
+
+        .nameTitle {
+            grid-area: 1 / 8 / span 2 / span 14;
+            @include font(xxl, $clr-black, bold);
+        }
+
+        .price {
+            grid-area: 3 / 8 / span 2 / span 3;
+            @include font(md);
+        }
+
+        .id {
+            grid-area: 6 / 8 / span 1 / span 3;
+        }
+
+        .name {
+            grid-area: 7 / 8 / span 1 / span 3;
+        }
+
+        .rank {
+            grid-area: 8 / 8 / span 1 / span 3;
+        }
+
+        .category {
+            grid-area: 9 / 8 / span 1 / span 3;
+        }
+
+        .subcategory {
+            grid-area: 10 / 8 / span 1 / span 3;
+        }
+
+        .status {
+            grid-area: 6 / 11 / span 1 / span 4;
+        }
+
+        .features {
+            grid-area: 7 / 11 / span 1 / span 3;
+        }
+
+        .burningFee {
+            grid-area: 8 / 11 / span 1 / span 3;
+        }
+
+        .born {
+            grid-area: 9 / 11 / span 1 / span 3;
+        }
+
+        .died {
+            grid-area: 10 / 11 / span 1 / span 3;
+        }
+
+        .description {
+            grid-area: 11 / 8 / span 3 / span 6;
+        }
+
+        .openSeaLink {
+            grid-area: 18 / 8 / span 3 / span 6;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .gridContainer {
+            img {
+                grid-area: 1 / 2 / span 14 / span 6;
+            }
+
+            .nameTitle {
+                grid-area: 1 / 9 / span 2 / span 14;
+            }
+
+            .price {
+                grid-area: 3 / 9 / span 2 / span 7;
+            }
+
+            .id {
+                grid-area: 5 / 9 / span 1 / span 7;
+            }
+
+            .name {
+                grid-area: 6 / 9 / span 1 / span 7;
+            }
+
+            .rank {
+                grid-area: 7 / 9 / span 1 / span 7;
+            }
+
+            .category {
+                grid-area: 8 / 9 / span 1 / span 7;
+            }
+
+            .subcategory {
+                grid-area: 9 / 9 / span 1 / span 7;
+            }
+
+            .status {
+                grid-area: 10 / 9 / span 1 / span 7;
+            }
+
+            .features {
+                grid-area: 11 / 9 / span 1 / span 7;
+            }
+
+            .burningFee {
+                grid-area: 12 / 9 / span 1 / span 7;
+            }
+
+            .born {
+                grid-area: 13 / 9 / span 1 / span 7;
+            }
+
+            .died {
+                grid-area: 14 / 9 / span 1 / span 7;
+            }
+
+            .description {
+                grid-area: 15 / 2 / span 1 / 14;
+            }
+
+            .openSeaLink {
+                grid-area: 21 / 7 / span 1 / 14;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .gridContainer {
+            .nameTitle {
+                grid-area: 1 / 3 / span 2 / span 14;
+            }
+
+            .price {
+                grid-area: 3 / 3 / span 2 / span 14;
+            }
+
+            img {
+                grid-area: 5 / 2 / span 2 / span 14;
+            }
+
+            .id {
+                grid-area: 9 / 3 / span 1 / span 8;
+            }
+
+            .name {
+                grid-area: 10 / 3 / span 1 / span 8;
+            }
+
+            .rank {
+                grid-area: 11/ 3 / span 1 / span 8;
+            }
+
+            .category {
+                grid-area: 12/ 3 / span 1 / span 8;
+            }
+
+            .subcategory {
+                grid-area: 13/ 3 / span 1 / span 8;
+            }
+
+            .status {
+                grid-area: 14 / 3 / span 1 / span 8;
+            }
+
+            .features {
+                grid-area: 15 / 3 / span 1 / span 8;
+            }
+
+            .burningFee {
+                grid-area: 16 / 3 / span 1 / span 8;
+            }
+
+            .born {
+                grid-area: 17 / 3 / span 1 / span 8;
+            }
+
+            .died {
+                grid-area: 18 / 3 / span 1 / span 8;
+            }
+
+            .description {
+                grid-area: 19 / 3 / span 1 / 14;
+            }
+
+            .openSeaLink {
+                grid-area: 25 / 6 / span 1 / 14;
+            }
+        }
+    }
+}
+
+.tokenPreview {
+    &.god .rank .propertyValue {
+        color: $clr-god;
+    }
+
+    &.legendary .rank .propertyValue {
+        color: $clr-legendary;
+    }
+
+    &.gold .rank .propertyValue {
+        color: $clr-gold;
+    }
+
+    &.evil .rank .propertyValue {
+        color: $clr-evil;
+    }
+
+    &.silver .rank .propertyValue {
+        color: $clr-silver;
+    }
+}

@@ -1,5 +1,3 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
-
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -11,15 +9,16 @@ const config = {
     entry: './client/src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
     },
     devServer: {
-        open: true,
-        host: 'localhost',
+        hot: true,
+        historyApiFallback: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './client/index.html',
-            favicon: "./client/favicon.ico",
+            favicon: './client/favicon.ico',
         }),
         new CopyPlugin({
             patterns: [
@@ -41,7 +40,7 @@ const config = {
                 exclude: ['/node_modules/'],
             },
             {
-                test: /\.scss$/,
+                test: /\.s[ac]ss$/i,
                 use: [
                     { loader: 'style-loader' }, // to inject the result into the DOM as a style block
                     {
@@ -57,7 +56,7 @@ const config = {
                 ],
             },
             {
-                test: /\.(png|jpe?g|gif|jp2|webp)$/,
+                test: /\.(png|jpe?g|gif|jp2|webp|svg)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]',
@@ -69,10 +68,7 @@ const config = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
-        alias: {
-            items: path.resolve(__dirname, 'static/items/'),
-            contract: path.resolve(__dirname, 'static/contract/'),
-        },
+        alias: {},
     },
 }
 

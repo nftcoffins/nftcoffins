@@ -1,0 +1,98 @@
+@import 'client/src/styles/common';
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $clr-white;
+
+    .logoNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .logoContainer {
+            display: flex;
+            align-items: center;
+            flex: 1;
+
+            .logo {
+                height: 36px;
+                width: 36px;
+                margin-right: 8px;
+                border-radius: 4px;
+            }
+
+            .title {
+                @include font(sm, $clr-black, bold);
+            }
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            flex: 1.3;
+
+            padding: 40px 0;
+
+            .option {
+                @include font(xs);
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    .header {
+        padding: 32px 45px;
+
+        .logoNav {
+            .options {
+                position: absolute;
+                top: 68px;
+                left: -100%;
+                padding: 50px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 100vh;
+
+                transition: all 0.5s ease;
+
+                .option {
+                    margin-bottom: 12px;
+
+                    &:last-child {
+                        margin-top: 40px;
+                    }
+                }
+
+                &.active {
+                    background: $clr-white;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+}

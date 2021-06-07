@@ -1,0 +1,55 @@
+@import 'client/src/styles/common';
+
+.whatAreNftCoffins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 900px;
+
+    .title {
+        margin-bottom: 60px;
+        @include font(xl, $clr-black, bold);
+    }
+
+    .points {
+        display: flex;
+        flex-direction: column;
+
+        .point {
+            display: flex;
+
+            > * {
+                margin-bottom: 16px;
+            }
+
+            img {
+                height: 80px;
+                width: 80px;
+
+                margin-right: 36px;
+            }
+
+            .descriptionBlock {
+                display: flex;
+                flex-direction: column;
+
+                .subtitle {
+                    @include font(md, $clr-black, bold);
+
+                    margin-bottom: 12px;
+                }
+
+                .description {
+                    @include font(xs, $clr-gray);
+                    word-break: break-word;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

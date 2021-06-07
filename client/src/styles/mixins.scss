@@ -1,0 +1,12 @@
+@mixin font-base {
+    font-family: Ubuntu Mono, monospace;
+    font-style: normal;
+}
+
+@mixin font($size, $color: $clr-black, $type: regular) {
+    @include font-base;
+    color: $color;
+    font-size: map-get($font-size-map, $size);
+    line-height: map-get($font-size-map, $size) * 1.3;
+    font-weight: map-get($font-weight-map, $type);
+}

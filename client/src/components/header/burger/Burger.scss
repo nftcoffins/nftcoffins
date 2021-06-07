@@ -1,0 +1,49 @@
+@import 'client/src/styles/common';
+
+.burger {
+    cursor: pointer;
+    padding: 12px 0;
+
+    span,
+    span:before,
+    span:after {
+        border-radius: 40px;
+        width: 20px;
+        height: 4px;
+        transition: all 0.2s ease-in-out;
+        background-color: $clr-black;
+    }
+
+    span {
+        position: relative;
+        display: block;
+
+        &:before,
+        &:after {
+            position: absolute;
+            content: '';
+        }
+
+        &:before {
+            top: -8px;
+        }
+
+        &:after {
+            top: 8px;
+        }
+    }
+
+    &.active {
+        span {
+            background: transparent;
+
+            &:before {
+                transform: rotate(45deg) translate(5px, 6px);
+            }
+
+            &:after {
+                transform: rotate(-45deg) translate(5px, -6px);
+            }
+        }
+    }
+}
