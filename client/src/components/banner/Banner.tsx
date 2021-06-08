@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import { OpenSeaLink } from '../../shared/components'
 
-import image from '../../../images/main.png'
+import image from '../../../images/main.jpg'
 import styles from './Banner.scss'
 
 type Props = {

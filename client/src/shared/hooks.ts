@@ -7,6 +7,6 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 export const useResetScroll = (deps?: any[]) => {
     useEffect(() => {
-        window.scrollTo(0, 0)
+        document.documentElement.scrollIntoView({ block: 'start', behavior: 'auto' })
     }, deps)
 }

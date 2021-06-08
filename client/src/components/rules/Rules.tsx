@@ -1,9 +1,9 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import empty from '../../../images/emptyCoffin.png'
-import withAttributes from '../../../images/withAttributes.png'
-import fullCoffin from '../../../images/fullCoffin.png'
+import empty from '../../../images/emptyCoffin.jpg'
+import withAttributes from '../../../images/coffinWithAttributes.jpg'
+import fullCoffin from '../../../images/fullCoffin.jpg'
 
 import styles from './Rules.scss'
 

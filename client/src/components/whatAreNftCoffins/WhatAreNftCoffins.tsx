@@ -1,9 +1,10 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import empty from '../../../images/emptyCoffin.png'
-import withAttributes from '../../../images/withAttributes.png'
-import fullCoffin from '../../../images/fullCoffin.png'
+import contract from '../../../images/contract.jpg'
+import rank from '../../../images/rank.jpg'
+import burning from '../../../images/burning.jpg'
+import ecosystem from '../../../images/ecosystem.jpg'
 
 import styles from './WhatAreNftCoffins.scss'
 
@@ -18,7 +19,7 @@ export function WhatAreNftCoffins({ className }: Props) {
 
             <div className={styles.points}>
                 <div className={styles.point}>
-                    <img src={withAttributes} />
+                    <img src={contract} />
                     <div className={styles.descriptionBlock}>
                         <div className={styles.subtitle}>ERC-721 </div>
                         <div className={styles.description}>
@@ -29,7 +30,7 @@ export function WhatAreNftCoffins({ className }: Props) {
                 </div>
 
                 <div className={styles.point}>
-                    <img src={empty} />
+                    <img src={rank} />
                     <div className={styles.descriptionBlock}>
                         <div className={styles.subtitle}>Ranks and Categories</div>
                         <div className={styles.description}>
@@ -41,7 +42,7 @@ export function WhatAreNftCoffins({ className }: Props) {
                 </div>
 
                 <div className={styles.point}>
-                    <img src={fullCoffin} />
+                    <img src={burning} />
                     <div className={styles.descriptionBlock}>
                         <div className={styles.subtitle}>Burning price</div>
                         <div className={styles.description}>
@@ -52,7 +53,7 @@ export function WhatAreNftCoffins({ className }: Props) {
                 </div>
 
                 <div className={styles.point}>
-                    <img src={fullCoffin} />
+                    <img src={ecosystem} />
                     <div className={styles.descriptionBlock}>
                         <div className={styles.subtitle}>Start of new Ecosystem</div>
                         <div className={styles.description}>

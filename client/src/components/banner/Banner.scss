@@ -9,14 +9,15 @@
         flex: 1;
         flex-direction: column;
         justify-content: center;
+        padding: 0 16px;
 
         .big {
-            @include font(xxxl, $clr-black, bold);
+            @include font(xxl, $clr-black, bold);
             margin-bottom: 16px;
         }
 
         .small {
-            @include font(xl);
+            @include font(lg);
             margin-bottom: 40px;
         }
     }

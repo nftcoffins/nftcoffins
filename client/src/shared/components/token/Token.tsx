@@ -19,6 +19,7 @@ export function Token({ tokenId }: Props) {
     const tokenPrice = prices[tokenId]
 
     useEffect(() => {
+        setToken(null)
         fetchToken(tokenId).then(setToken)
     }, [tokenId])
 
@@ -67,12 +68,16 @@ export function Token({ tokenId }: Props) {
                     </div>
                     <div className={styles.born}>
                         <span className={styles.propertyName}>Born:</span>
-                        <span className={styles.propertyValue}>{new Date(token?.bornMillis).toDateString()}</span>
+                        <span className={styles.propertyValue}>
+                            {new Date(token?.bornMillis * 1000).toDateString()}
+                        </span>
                     </div>
                     {token?.diedMillis && (
                         <div className={styles.died}>
                             <span className={styles.propertyName}>Died:</span>
-                            <span className={styles.propertyValue}>{new Date(token?.diedMillis).toDateString()}</span>
+                            <span className={styles.propertyValue}>
+                                {new Date(token?.diedMillis * 1000).toDateString()}
+                            </span>
                         </div>
                     )}
                     <div className={styles.description}>

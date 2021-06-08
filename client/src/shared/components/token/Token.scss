@@ -1,11 +1,13 @@
 @import '../../../styles/common';
 
 .tokenPreview {
+    padding: 0 16px;
+
     .gridContainer {
         display: grid;
         grid-template: auto / repeat(14, 1fr);
         grid-auto-flow: dense;
-        grid-gap: 10px;
+        grid-row-gap: 20px;
 
         img {
             grid-area: 1 / 1 / span 15 / span 6;
@@ -21,7 +23,7 @@
         }
 
         .propertyValue {
-            @include font(xs, $clr-blue, bold);
+            @include font(xs, $clr-blue);
         }
 
         .nameTitle {
@@ -30,28 +32,28 @@
         }
 
         .price {
-            grid-area: 3 / 8 / span 2 / span 3;
+            grid-area: 3 / 8 / span 2 / span 6;
             @include font(md);
         }
 
         .id {
-            grid-area: 6 / 8 / span 1 / span 3;
+            grid-area: 6 / 8 / span 1 / span 4;
         }
 
         .name {
-            grid-area: 7 / 8 / span 1 / span 3;
+            grid-area: 7 / 8 / span 1 / span 4;
         }
 
         .rank {
-            grid-area: 8 / 8 / span 1 / span 3;
+            grid-area: 8 / 8 / span 1 / span 4;
         }
 
         .category {
-            grid-area: 9 / 8 / span 1 / span 3;
+            grid-area: 9 / 8 / span 1 / span 4;
         }
 
         .subcategory {
-            grid-area: 10 / 8 / span 1 / span 3;
+            grid-area: 10 / 8 / span 1 / span 4;
         }
 
         .status {
@@ -59,19 +61,19 @@
         }
 
         .features {
-            grid-area: 7 / 11 / span 1 / span 3;
+            grid-area: 7 / 11 / span 1 / span 4;
         }
 
         .burningFee {
-            grid-area: 8 / 11 / span 1 / span 3;
+            grid-area: 8 / 11 / span 1 / span 4;
         }
 
         .born {
-            grid-area: 9 / 11 / span 1 / span 3;
+            grid-area: 9 / 11 / span 1 / span 4;
         }
 
         .died {
-            grid-area: 10 / 11 / span 1 / span 3;
+            grid-area: 10 / 11 / span 1 / span 4;
         }
 
         .description {
@@ -79,12 +81,14 @@
         }
 
         .openSeaLink {
-            grid-area: 18 / 8 / span 3 / span 6;
+            grid-area: 14 / 8 / span 3 / span 6;
         }
     }
 
     @media (max-width: 1200px) {
         .gridContainer {
+            grid-row-gap: 30px;
+
             img {
                 grid-area: 1 / 2 / span 14 / span 6;
             }
@@ -94,119 +98,134 @@
             }
 
             .price {
-                grid-area: 3 / 9 / span 2 / span 7;
+                grid-area: 3 / 9 / span 2 / span 14;
             }
 
             .id {
-                grid-area: 5 / 9 / span 1 / span 7;
+                grid-area: 5 / 9 / span 1 / span 14;
             }
 
             .name {
-                grid-area: 6 / 9 / span 1 / span 7;
+                grid-area: 6 / 9 / span 1 / span 14;
             }
 
             .rank {
-                grid-area: 7 / 9 / span 1 / span 7;
+                grid-area: 7 / 9 / span 1 / span 14;
             }
 
             .category {
-                grid-area: 8 / 9 / span 1 / span 7;
+                grid-area: 8 / 9 / span 1 / span 14;
             }
 
             .subcategory {
-                grid-area: 9 / 9 / span 1 / span 7;
+                grid-area: 9 / 9 / span 1 / span 14;
             }
 
             .status {
-                grid-area: 10 / 9 / span 1 / span 7;
+                grid-area: 10 / 9 / span 1 / span 14;
             }
 
             .features {
-                grid-area: 11 / 9 / span 1 / span 7;
+                grid-area: 11 / 9 / span 1 / span 14;
             }
 
             .burningFee {
-                grid-area: 12 / 9 / span 1 / span 7;
+                grid-area: 12 / 9 / span 1 / span 14;
             }
 
             .born {
-                grid-area: 13 / 9 / span 1 / span 7;
+                grid-area: 13 / 9 / span 1 / span 14;
             }
 
             .died {
-                grid-area: 14 / 9 / span 1 / span 7;
+                grid-area: 14 / 9 / span 1 / span 14;
             }
 
             .description {
-                grid-area: 15 / 2 / span 1 / 14;
+                grid-area: 15 / 2 / span 1 / span 12;
             }
 
             .openSeaLink {
-                grid-area: 21 / 7 / span 1 / 14;
+                grid-area: 18 / 7 / span 1 / span 14;
             }
         }
     }
 
     @media (max-width: 900px) {
         .gridContainer {
+            grid-template: auto / repeat(1, 1fr);
+            grid-row-gap: 30px;
+
+            > *:not(img, .nameTitle, .price, .openSeaLink) {
+                margin-left: 16px;
+            }
+
+            .nameTitle,
+            .price,
+            .openSeaLink {
+                justify-self: center;
+            }
+
             .nameTitle {
-                grid-area: 1 / 3 / span 2 / span 14;
+                grid-area: 1 / 1 / span 2 / span 1;
+                @include font(lg, $clr-black, bold);
             }
 
             .price {
-                grid-area: 3 / 3 / span 2 / span 14;
+                grid-area: 3 / 1 / span 2 / span 1;
+                @include font(md, $clr-black);
             }
 
             img {
-                grid-area: 5 / 2 / span 2 / span 14;
+                grid-area: 5 / 1 / span 2 / span 1;
             }
 
             .id {
-                grid-area: 9 / 3 / span 1 / span 8;
+                grid-area: 7 / 1 / span 2 / span 1;
             }
 
             .name {
-                grid-area: 10 / 3 / span 1 / span 8;
+                grid-area: 8 / 1 / span 2 / span 1;
             }
 
             .rank {
-                grid-area: 11/ 3 / span 1 / span 8;
+                grid-area: 9 / 1 / span 2 / span 1;
             }
 
             .category {
-                grid-area: 12/ 3 / span 1 / span 8;
+                grid-area: 10 / 1 / span 2 / span 1;
             }
 
             .subcategory {
-                grid-area: 13/ 3 / span 1 / span 8;
+                grid-area: 11 / 1 / span 2 / span 1;
             }
 
             .status {
-                grid-area: 14 / 3 / span 1 / span 8;
+                grid-area: 12 / 1 / span 2 / span 1;
             }
 
             .features {
-                grid-area: 15 / 3 / span 1 / span 8;
+                grid-area: 13 / 1 / span 2 / span 1;
             }
 
             .burningFee {
-                grid-area: 16 / 3 / span 1 / span 8;
+                grid-area: 14 / 1 / span 2 / span 1;
             }
 
             .born {
-                grid-area: 17 / 3 / span 1 / span 8;
+                grid-area: 15 / 1 / span 2 / span 1;
             }
 
             .died {
-                grid-area: 18 / 3 / span 1 / span 8;
+                grid-area: 16 / 1 / span 2 / span 1;
             }
 
             .description {
-                grid-area: 19 / 3 / span 1 / 14;
+                grid-area: 17 / 1 / span 2 / span 1;
             }
 
             .openSeaLink {
-                grid-area: 25 / 6 / span 1 / 14;
+                grid-area: 19 / 1 / span 2 / span 1;
             }
         }
     }

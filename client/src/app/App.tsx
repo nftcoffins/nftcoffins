@@ -9,6 +9,7 @@ import { Token } from '../pages/token/Token'
 
 import { fetchGeneralInfoAsync } from './AppSlice'
 import styles from './App.scss'
+import { Footer } from '../components/footer/Footer'
 
 export function App() {
     const dispatch = useAppDispatch()
@@ -32,6 +33,7 @@ export function App() {
                         </Route>
                     </Switch>
                 </div>
+                <Footer className={styles.footer} />
             </div>
         </Router>
     )
