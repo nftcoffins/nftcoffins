@@ -17,6 +17,10 @@
             display: flex;
         }
 
+        .description {
+            text-align: justify;
+        }
+
         .propertyName {
             @include font(xs);
             margin-right: 6px;
@@ -37,23 +41,23 @@
         }
 
         .id {
-            grid-area: 6 / 8 / span 1 / span 4;
+            grid-area: 6 / 8 / span 1 / span 3;
         }
 
         .name {
-            grid-area: 7 / 8 / span 1 / span 4;
+            grid-area: 7 / 8 / span 1 / span 3;
         }
 
         .rank {
-            grid-area: 8 / 8 / span 1 / span 4;
+            grid-area: 8 / 8 / span 1 / span 3;
         }
 
         .category {
-            grid-area: 9 / 8 / span 1 / span 4;
+            grid-area: 9 / 8 / span 1 / span 3;
         }
 
         .subcategory {
-            grid-area: 10 / 8 / span 1 / span 4;
+            grid-area: 10 / 8 / span 1 / span 3;
         }
 
         .status {

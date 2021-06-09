@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 16px;
+    max-width: 900px;
 
     .title {
         margin-bottom: 60px;
@@ -14,7 +15,7 @@
 
     .description {
         @include font(md, $clr-gray);
-        text-align: center;
+        text-align: justify;
 
         p:not(:last-child) {
             margin-bottom: 30px;
