@@ -1,0 +1,35 @@
+{ 
+  "id": 12,
+  "name": "Vitalik Buterin",
+  "description": "Russian-Canadian programmer and writer who is best known as one of the co-founders of Ethereum. Buterin became involved with cryptocurrency early in its inception, co-founding Bitcoin Magazine in 2011.In 2014, Buterin launched Ethereum with Gavin Wood.",
+  "image": "https://nftcoffins.com/api/items/12/12.png",
+  "external_url": "https://nftcoffins.com/api/items/12",
+  "burning_fee": 50,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Business"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Crypto"
+    },
+    {
+      "trait_type": "Features",
+      "value": 6
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 759978000
+    }
+  ]
+}
