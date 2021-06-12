@@ -68,16 +68,12 @@ export function Token({ tokenId }: Props) {
                     </div>
                     <div className={styles.born}>
                         <span className={styles.propertyName}>Born:</span>
-                        <span className={styles.propertyValue}>
-                            {new Date(token?.bornMillis * 1000).toDateString()}
-                        </span>
+                        <span className={styles.propertyValue}>{token?.bornDate.toDateString()}</span>
                     </div>
-                    {token?.diedMillis && (
+                    {token?.diedDate && (
                         <div className={styles.died}>
                             <span className={styles.propertyName}>Died:</span>
-                            <span className={styles.propertyValue}>
-                                {new Date(token?.diedMillis * 1000).toDateString()}
-                            </span>
+                            <span className={styles.propertyValue}>{token.diedDate.toDateString()}</span>
                         </div>
                     )}
                     <div className={styles.description}>

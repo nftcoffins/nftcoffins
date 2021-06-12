@@ -19,48 +19,56 @@ export function WhatAreNftCoffins({ className }: Props) {
 
             <div className={styles.points}>
                 <div className={styles.point}>
-                    <img src={contract} />
                     <div className={styles.descriptionBlock}>
-                        <div className={styles.subtitle}>ERC-721 </div>
-                        <div className={styles.description}>
+                        <img src={contract} />
+                        <span className={styles.subtitle}>ERC-721 </span>
+                        <br />
+                        <br />
+                        <span className={styles.description}>
                             The NFT contract (0xf7a0Be0EBb60EaE52f9340Cc5FA136fcFde4744E) the governs ownership is a
                             standard ERC-721 that works with any compatible service or exchange.
-                        </div>
+                        </span>
                     </div>
                 </div>
 
                 <div className={styles.point}>
-                    <img src={rank} />
                     <div className={styles.descriptionBlock}>
-                        <div className={styles.subtitle}>Ranks and Categories</div>
-                        <div className={styles.description}>
+                        <img src={rank} />
+                        <span className={styles.subtitle}>Ranks and Categories</span>
+                        <br />
+                        <br />
+                        <span className={styles.description}>
                             All coffins are divided into five ranks: God, Legendary, Gold, Silver and Evil. And all the
                             coffins are grouped into eight categories: Art, Business, Scientist, Politician, Character,
                             Influencer, Sport, Comedian.
-                        </div>
+                        </span>
                     </div>
                 </div>
 
                 <div className={styles.point}>
-                    <img src={burning} />
                     <div className={styles.descriptionBlock}>
-                        <div className={styles.subtitle}>Burning price</div>
-                        <div className={styles.description}>
+                        <img src={burning} />
+                        <span className={styles.subtitle}>Burning price</span>
+                        <br />
+                        <br />
+                        <span className={styles.description}>
                             Each coffin, depending on its rank, has a specific cost of burning. So the owner of the
                             token can destroy it. Just know it.
-                        </div>
+                        </span>
                     </div>
                 </div>
 
                 <div className={styles.point}>
-                    <img src={ecosystem} />
                     <div className={styles.descriptionBlock}>
-                        <div className={styles.subtitle}>Start of new Ecosystem</div>
-                        <div className={styles.description}>
+                        <img src={ecosystem} />
+                        <span className={styles.subtitle}>Start of new Ecosystem</span>
+                        <br />
+                        <br />
+                        <span className={styles.description}>
                             The collection of NFT coffins is the beginning of a new Ecosystem. You can earn for holding
                             your tokens, increase the cost by unique attributes and compete with other users in a casual
                             game.
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>

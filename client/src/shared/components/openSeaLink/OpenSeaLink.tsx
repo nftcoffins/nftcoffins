@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { OPEN_SEA_URL } from '../../constants'
+import { OPEN_SEA_TOKEN_BASE_URL, OPEN_SEA_URL } from '../../constants'
 import coffinImage from '../../../../images/coffin.png'
 import styles from './OpenSeaLink.scss'
 import classNames from 'classnames'
@@ -11,7 +11,7 @@ type Props = {
 }
 
 export function OpenSeaLink({ tokenId, className }: Props) {
-    const link = tokenId ? `${OPEN_SEA_URL}1` : OPEN_SEA_URL
+    const link = tokenId ? `${OPEN_SEA_TOKEN_BASE_URL}${tokenId}` : OPEN_SEA_URL
 
     return (
         <div className={classNames(styles.openSeaLink, className)}>
