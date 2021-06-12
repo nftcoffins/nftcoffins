@@ -23,7 +23,6 @@ export function WhatAreNftCoffins({ className }: Props) {
                         <img src={contract} />
                         <span className={styles.subtitle}>ERC-721 </span>
                         <br />
-                        <br />
                         <span className={styles.description}>
                             The NFT contract (0xf7a0Be0EBb60EaE52f9340Cc5FA136fcFde4744E) the governs ownership is a
                             standard ERC-721 that works with any compatible service or exchange.
@@ -35,7 +34,6 @@ export function WhatAreNftCoffins({ className }: Props) {
                     <div className={styles.descriptionBlock}>
                         <img src={rank} />
                         <span className={styles.subtitle}>Ranks and Categories</span>
-                        <br />
                         <br />
                         <span className={styles.description}>
                             All coffins are divided into five ranks: God, Legendary, Gold, Silver and Evil. And all the
@@ -50,7 +48,6 @@ export function WhatAreNftCoffins({ className }: Props) {
                         <img src={burning} />
                         <span className={styles.subtitle}>Burning price</span>
                         <br />
-                        <br />
                         <span className={styles.description}>
                             Each coffin, depending on its rank, has a specific cost of burning. So the owner of the
                             token can destroy it. Just know it.
@@ -62,7 +59,6 @@ export function WhatAreNftCoffins({ className }: Props) {
                     <div className={styles.descriptionBlock}>
                         <img src={ecosystem} />
                         <span className={styles.subtitle}>Start of new Ecosystem</span>
-                        <br />
                         <br />
                         <span className={styles.description}>
                             The collection of NFT coffins is the beginning of a new Ecosystem. You can earn for holding

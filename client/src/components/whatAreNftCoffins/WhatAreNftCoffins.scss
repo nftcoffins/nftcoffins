@@ -22,10 +22,6 @@
             display: flex;
             flex-direction: column;
 
-            > * {
-                margin-bottom: 16px;
-            }
-
             img {
                 float: left;
 
@@ -33,7 +29,7 @@
                 width: 80px;
 
                 margin-right: 36px;
-                margin-bottom: 21px;
+                margin-bottom: 21px
             }
 
             .descriptionBlock {
@@ -41,6 +37,7 @@
 
                 .subtitle {
                     @include font(md, $clr-black, bold);
+                    vertical-align: top;
                 }
 
                 .description {
