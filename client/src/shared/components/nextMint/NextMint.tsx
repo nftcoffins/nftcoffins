@@ -1,7 +1,8 @@
 import React from 'react'
 
 import emptyPreview from '../../../../images/emptyPreview.jpg'
-import styles from './nextMint.scss'
+
+import styles from './NextMint.scss'
 
 export function NextMint() {
     return (
