@@ -29,16 +29,15 @@
                 width: 80px;
 
                 margin-right: 36px;
-                margin-bottom: 21px
+                margin-bottom: 50px;
+            }
+
+            .subtitle {
+                @include font(md, $clr-black, bold);
             }
 
             .descriptionBlock {
                 text-align: justify;
-
-                .subtitle {
-                    @include font(md, $clr-black, bold);
-                    vertical-align: top;
-                }
 
                 .description {
                     @include font(xs, $clr-gray);
@@ -49,6 +48,27 @@
             &:not(:last-child) {
                 margin-bottom: 32px;
             }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .whatAreNftCoffins .points .point .descriptionBlock {
+        .subtitle {
+            vertical-align: center;
+        }
+
+        img {
+            margin: 30px 16px 30px 0;
+            float: none;
+        }
+    }
+}
+
+@media (min-width: 781px) {
+    .whatAreNftCoffins .points .point .descriptionBlock {
+        .subtitle {
+            vertical-align: top;
         }
     }
 }
