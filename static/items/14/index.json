@@ -1,0 +1,35 @@
+{ 
+  "id": 14,
+  "name": "Donald Trump",
+  "description": "American media personality and businessman who served as the 45th president of the United States from 2017 to 2021.",
+  "image": "https://nftcoffins.com/api/items/14/big.png",
+  "external_url": "https://nftcoffins.com/api/items/14",
+  "burning_fee": 50,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Politician"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "U.S. Presidents"
+    },
+    {
+      "trait_type": "Features",
+      "value": 11
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": -743169600
+    }
+  ]
+}
