@@ -1,0 +1,35 @@
+{ 
+  "id": 15,
+  "name": "Cristiano Ronaldo",
+  "description": "Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Ronaldo has won five Ballons d'Or and four European Golden Shoes, both of which are records for a European player. He has won 32 major trophies in his career, including seven league titles, five UEFA Champions Leagues, one UEFA European Championship, and one UEFA Nations League title. Ronaldo holds the records for the most international goals (109, tied with Ali Daei), the most goals (134) and assists (42) in the Champions League, and the most goals in the European Championship (14). He is one of the few recorded players to have made over 1,100 professional career appearances and has scored over 780 official senior career goals for club and country.",
+  "image": "https://nftcoffins.com/api/items/15/big.png",
+  "external_url": "https://nftcoffins.com/api/items/15",
+  "burning_fee": 50,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Sport"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Footballer"
+    },
+    {
+      "trait_type": "Features",
+      "value": 9
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Empty"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": 476452801
+    }
+  ]
+}
