@@ -11,6 +11,7 @@
 
         img {
             grid-area: 1 / 1 / span 15 / span 6;
+            cursor: pointer;
         }
 
         > *:not(.description) {

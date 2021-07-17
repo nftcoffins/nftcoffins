@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
+import Viewer from 'react-viewer'
 
 import { fetchToken } from '../../api'
 import { LoaderContainer, OpenSeaLink } from '../index'
@@ -17,20 +18,36 @@ export function Token({ tokenId }: Props) {
     const { prices } = useAppSelector(selectGeneralInfo)
     const [token, setToken] = useState<TokenModel>(null)
     const tokenPrice = prices[tokenId]
+    const [isViewerShown, setIsViewerShown] = useState(false)
+    const containerClasses = classNames(styles.tokenPreview, styles[token?.rank.toLowerCase()])
+    const priceView = `Price: ${tokenPrice} Eth`
 
     useEffect(() => {
         setToken(null)
         fetchToken(tokenId).then(setToken)
     }, [tokenId])
 
-    const containerClasses = classNames(styles.tokenPreview, styles[token?.rank.toLowerCase()])
-    const priceView = `Price: ${tokenPrice} Eth`
+    const openViewer = () => {
+        setIsViewerShown(true)
+    }
+
+    const closeViewer = () => {
+        setIsViewerShown(false)
+    }
 
     return (
         <LoaderContainer isLoading={!token} className={styles.loaderContainer}>
             <div className={containerClasses}>
                 <div className={styles.gridContainer}>
-                    <img src={token?.image} alt="Token Image" />
+                    <img src={token?.webImage} alt="Token Image" onClick={openViewer} />
+
+                    <Viewer
+                        images={[{ src: token?.image, alt: token?.name }]}
+                        visible={isViewerShown}
+                        onClose={closeViewer}
+                        noFooter
+                    />
+
                     <div className={styles.nameTitle}>{token?.name}</div>
                     <div className={styles.price}>{priceView}</div>
 
