@@ -40,7 +40,7 @@ const config = {
                 exclude: ['/node_modules/'],
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(s[ac]ss|css)$/i,
                 use: [
                     { loader: 'style-loader' }, // to inject the result into the DOM as a style block
                     {

@@ -9,7 +9,7 @@
         grid-auto-flow: dense;
         grid-row-gap: 20px;
 
-        img {
+        .imageContainer {
             grid-area: 1 / 1 / span 15 / span 6;
             cursor: pointer;
         }
@@ -94,7 +94,7 @@
         .gridContainer {
             grid-row-gap: 30px;
 
-            img {
+            .imageContainer {
                 grid-area: 1 / 2 / span 14 / span 6;
             }
 
@@ -181,7 +181,7 @@
                 @include font(md, $clr-black);
             }
 
-            img {
+            .imageContainer {
                 grid-area: 5 / 1 / span 2 / span 1;
             }
 

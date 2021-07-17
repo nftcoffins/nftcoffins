@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
-import Viewer from 'react-viewer'
-import { disablePageScroll, enablePageScroll } from 'scroll-lock'
+import ModalImage from 'react-modal-image'
 
 import { fetchToken } from '../../api'
 import { LoaderContainer, OpenSeaLink } from '../index'
@@ -19,7 +18,6 @@ export function Token({ tokenId }: Props) {
     const { prices } = useAppSelector(selectGeneralInfo)
     const [token, setToken] = useState<TokenModel>(null)
     const tokenPrice = prices[tokenId]
-    const [isViewerShown, setIsViewerShown] = useState(false)
     const containerClasses = classNames(styles.tokenPreview, styles[token?.rank.toLowerCase()])
     const priceView = `Price: ${tokenPrice} Eth`
 
@@ -28,32 +26,16 @@ export function Token({ tokenId }: Props) {
         fetchToken(tokenId).then(setToken)
     }, [tokenId])
 
-    const openViewer = () => {
-        setIsViewerShown(true)
-        disablePageScroll()
-    }
-
-    const closeViewer = () => {
-        setIsViewerShown(false)
-        enablePageScroll()
-    }
-
     return (
         <LoaderContainer isLoading={!token} className={styles.loaderContainer}>
             <div className={containerClasses}>
                 <div className={styles.gridContainer}>
-                    <img src={token?.webImage} alt="Token Image" onClick={openViewer} />
-
-                    <Viewer
-                        images={[{ src: token?.image, alt: token?.name }]}
-                        visible={isViewerShown}
-                        onClose={closeViewer}
-                        noFooter
-                    />
+                    <div className={styles.imageContainer}>
+                        <ModalImage small={token?.webImage} large={token?.image} />
+                    </div>
 
                     <div className={styles.nameTitle}>{token?.name}</div>
                     <div className={styles.price}>{priceView}</div>
-
                     <div className={styles.id}>
                         <span className={styles.propertyName}>Token ID:</span>
                         <span className={styles.propertyValue}>{token?.id}</span>
@@ -100,7 +82,6 @@ export function Token({ tokenId }: Props) {
                         <span className={styles.propertyName}>Description:</span>
                         <span className={styles.propertyValue}>{token?.description}</span>
                     </div>
-
                     <OpenSeaLink className={styles.openSeaLink} tokenId={tokenId} />
                 </div>
             </div>
