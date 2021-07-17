@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
 import { useHistory } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 import image from '../../../images/favicon/apple-touch-icon.png'
 
+import { FOR_SALE_ANCHOR_ID } from '../../shared/constants'
 import { OpenSeaLink } from '../../shared/components'
 import { Burger } from './burger/Burger'
 import styles from './Header.scss'
@@ -37,10 +39,15 @@ export function Header({ className }: Props) {
                             Twitter
                         </a>
                     </li>
+
                     <li className={styles.option} onClick={closeMobileMenu}>
                         <a href="https://nftcoffins.medium.com" target="_blank">
                             Medium
                         </a>
+                    </li>
+
+                    <li className={styles.option} onClick={closeMobileMenu}>
+                        <Link to={`#${FOR_SALE_ANCHOR_ID}`}>Items</Link>
                     </li>
 
                     <li className={styles.option} onClick={closeMobileMenu}>

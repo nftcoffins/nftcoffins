@@ -31,4 +31,11 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
+    .anchor {
+        display: block;
+        position: relative;
+        top: -110px;
+        visibility: hidden;
+    }
 }
