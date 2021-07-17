@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
 import Viewer from 'react-viewer'
+import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
 import { fetchToken } from '../../api'
 import { LoaderContainer, OpenSeaLink } from '../index'
@@ -29,10 +30,12 @@ export function Token({ tokenId }: Props) {
 
     const openViewer = () => {
         setIsViewerShown(true)
+        disablePageScroll()
     }
 
     const closeViewer = () => {
         setIsViewerShown(false)
+        enablePageScroll()
     }
 
     return (
