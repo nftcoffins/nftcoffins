@@ -1,0 +1,40 @@
+{
+  "id": 19,
+  "name": "Marilyn Monroe",
+  "description": "American actress, model, and singer. Famous for playing comedic 'blonde bombshell' characters, she became one of the most popular sex symbols of the 1950s and early 1960s and was emblematic of the era's sexual revolution. She was a top-billed actress for only a decade, but her films grossed $200 million (equivalent to $2 billion in 2020) by the time of her death in 1962.[3] Long after her death, she continues to be a major icon of pop culture.[4] In 1999, the American Film Institute ranked Monroe sixth on its list of the greatest female screen legends from the Golden Age of Hollywood.",
+  "image": "https://nftcoffins.com/api/items/19/big.png",
+  "external_url": "https://nftcoffins.com/api/items/19",
+  "burning_fee": 50,
+  "attributes": [
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Art"
+    },
+    {
+      "trait_type": "Subcategory",
+      "value": "Actor"
+    },
+    {
+      "trait_type": "Features",
+      "value": 10
+    },
+    {
+      "trait_type": "Coffin Status",
+      "value": "Full"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "born",
+      "value": -1375444800
+    },
+    {
+      "display_type": "date",
+      "trait_type": "died",
+      "value": -233841600
+    }
+  ]
+}
